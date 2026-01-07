@@ -27,6 +27,7 @@ qt_add_qml_module(appLunaTester
     SOURCES src/Globals.cpp
     SOURCES src/Globals.h
     SOURCES src/tqmllayer.h src/tqmllayer.cpp
+    SOURCES src/tflunaiface.h src/tflunaiface.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

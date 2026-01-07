@@ -2,6 +2,7 @@
 
 #include "tqmllayer.h"
 #include "fn_log.h"
+#include "Globals.h"
 
 TQMLLayer::TQMLLayer(QObject *parent)
     : QObject{parent}
@@ -60,6 +61,7 @@ void TQMLLayer::processGetPorts()
 void TQMLLayer::openPort(QString sPort)
 {
     LogInfo() << "Open port '" << sPort.toStdString() << "'";
+    luna.InitLuna(sPort.toLocal8Bit().data());
 }
 
 
